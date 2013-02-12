@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "grunt": "0.4.0rc7",
-    "grunt-contrib-jshint": "*"
+    "grunt-contrib-jshint": "0.1.1rc6"
   },
   "keywords": [
     "grunt",
