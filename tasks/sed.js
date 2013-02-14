@@ -12,8 +12,8 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('sed', 'Search and replace.', function() {
     var data = this.data;
 
-    if (!data.regex) {
-      log.error('Missing regex property.');
+    if (!data.pattern) {
+      log.error('Missing pattern property.');
       return;
     }
 
@@ -25,15 +25,10 @@ module.exports = function(grunt) {
     data.path = data.path || '.';
 
     replace({
-      regex: data.regex
+      regex: data.pattern
     , replacement: data.replacement
     , path: _.isArray(data.path) ? data.path : [data.path]
     , recursive: data.recursive
-    , preview: data.preview
-    , ignoreCase: data.ignoreCase
-    , multiline: _.isUndefined(data.multiline) ? true : data.multiline
-    , include: data.include
-    , exclude: data.exclude
     , quiet: grunt.option('verbose') ? false : true
     , silent: false
     , async: false
