@@ -24,7 +24,7 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "replace": "~0.2"
+    "replace": "git://github.com/jharding/replace.git#support-regex-values-for-regex"
   },
   "devDependencies": {
     "grunt": "0.4.0rc7",
