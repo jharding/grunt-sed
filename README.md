@@ -2,7 +2,9 @@
 grunt-sed
 =========
 
-Built on top of [replace](replace), grunt-sed is a Grunt plugin for performing search and replace on files.
+Built on top of [replace][replace], grunt-sed is a Grunt plugin for performing search and replace on files.
+
+[replace]: https://github.com/harthur/replace
 
 Installation
 ------------
