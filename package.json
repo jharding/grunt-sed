@@ -23,6 +23,9 @@
   "engines": {
     "node": ">=0.8.0"
   },
+  "scripts": {
+    "test": "/usr/bin/env node test/test.js"
+  },
   "dependencies": {
     "replace": "git://github.com/jharding/replace.git#support-regex-values-for-regex"
   },
