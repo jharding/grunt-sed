@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       return;
     }
 
-    if (!data.replacement) {
+    if (_.isUndefined(data.replacement)) {
       log.error('Missing replacement property.');
       return;
     }
