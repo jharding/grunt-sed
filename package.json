@@ -27,7 +27,7 @@
     "test": "/usr/bin/env node test/test.js"
   },
   "dependencies": {
-    "replace": "git://github.com/jharding/replace.git#support-regex-values-for-regex"
+    "replace": "~0.2.4"
   },
   "peerDependencies": {
     "grunt": "~0.4"

@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     replace({
       regex: data.pattern
     , replacement: data.replacement
-    , path: _.isArray(data.path) ? data.path : [data.path]
+    , paths: _.isArray(data.path) ? data.path : [data.path]
     , recursive: data.recursive
     , quiet: grunt.option('verbose') ? false : true
     , silent: false
