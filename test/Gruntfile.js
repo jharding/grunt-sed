@@ -16,6 +16,11 @@ module.exports = function(grunt) {
       , replacement: function(match) { return match.toLowerCase(); }
       , path: 'test.txt'
       }
+    , test4: {
+        pattern: /Y/g
+      , replacement: 'Z'
+      , path: 'test.txt'
+      }
     }
   });
 
