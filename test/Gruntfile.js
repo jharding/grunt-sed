@@ -1,7 +1,10 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     sed: {
-      test1: {
+      options: {
+        path: 'test.txt'
+      }
+    , test1: {
         pattern: 'search'
       , replacement: 'replace'
       , path: 'test.txt'
@@ -20,6 +23,10 @@ module.exports = function(grunt) {
         pattern: /Y/g
       , replacement: 'Z'
       , path: 'test.txt'
+      }
+    , test5: {
+        pattern: 'replace'
+      , replacement: 'anotherReplace'
       }
     }
   });

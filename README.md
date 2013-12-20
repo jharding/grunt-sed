@@ -51,6 +51,31 @@ grunt.initConfig({
 });
 ```
 
+### Setting `path` globally
+
+If you are using one global file with many configuration directives for your project, it is better to structure `grunt:sed` configuration with global path and individual targets per configuration directive in your file.
+
+```javascript
+grunt.initConfig({
+  pkg: grunt.file.readJSON('package.json'),
+
+  sed: {
+    options: {
+      path: 'my/config/file.js'
+    }
+    ,version: {
+      pattern: '%VERSION%',
+      replacement: '<%= pkg.version %>',
+    }
+    ,pagerSize: {
+      pattern: 'pagerSize:5',
+      replacement: 'pagerSize:25',
+    }
+  }
+});
+```
+
+
 Testing
 -------
 
