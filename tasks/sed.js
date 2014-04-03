@@ -6,7 +6,7 @@
 
 module.exports = function(grunt) {
   var replace = require('replace')
-    , _ = grunt.util._
+    , _ = require('lodash')
     , log = grunt.log;
 
   grunt.registerMultiTask('sed', 'Search and replace.', function() {
