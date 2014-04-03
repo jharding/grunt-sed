@@ -3,13 +3,10 @@
   "description": "Grunt task for search and replace.",
   "version": "0.1.1",
   "homepage": "https://github.com/jharding/grunt-sed",
-  "author": {
-    "name": "Jake Harding",
-    "email": "jacob.s.harding@gmail.com"
-  },
+  "author": "Jake Harding <jacob.s.harding@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jharding/grunt-sed.git"
+    "url": "https://github.com/jharding/grunt-sed.git"
   },
   "bugs": {
     "url": "https://github.com/jharding/grunt-sed/issues"
@@ -25,7 +22,7 @@
   },
   "main": "tasks/sed.js",
   "scripts": {
-    "test": "/usr/bin/env node test/test.js"
+    "test": "node test/test.js"
   },
   "dependencies": {
     "replace": "~0.2.9"
