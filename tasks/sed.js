@@ -23,11 +23,13 @@ module.exports = function(grunt) {
     }
 
     data.path = data.path || '.';
+    data.exclude = data.exclude || '';
 
     replace({
       regex: data.pattern
     , replacement: data.replacement
     , paths: _.isArray(data.path) ? data.path : [data.path]
+    , exclude: _.isArray(data.exclude) ? _(data.exclude).toString() : data.exclude
     , recursive: data.recursive
     , quiet: grunt.option('verbose') ? false : true
     , silent: false
