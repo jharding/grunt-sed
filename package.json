@@ -28,14 +28,14 @@
     "test": "/usr/bin/env node test/test.js"
   },
   "dependencies": {
-    "replace": "~0.2.4"
+    "replace": "~0.2.9"
   },
   "peerDependencies": {
     "grunt": "~0.4"
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-contrib-jshint": "~0.1"
+    "grunt-contrib-jshint": "~0.10"
   },
   "keywords": [
     "grunt",

@@ -5,6 +5,8 @@ module.exports = function(grunt) {
       // enforcing options
         curly: true
       , forin: true
+      , indent: 2
+      , maxlen: 80
       , newcap: true
       , noarg: true
       , noempty: true
@@ -12,12 +14,9 @@ module.exports = function(grunt) {
       , quotmark: true
       , undef: true
       , unused: true
-      , trailing: true
-      , maxlen: 80
 
       // relaxing options
       , boss: true
-      , es5: true
       , expr: true
       , laxcomma: true
 
