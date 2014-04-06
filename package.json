@@ -22,7 +22,7 @@
   },
   "main": "tasks/sed.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "grunt test"
   },
   "dependencies": {
     "replace": "~0.2.9"
@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-contrib-jshint": "~0.10"
+    "grunt-contrib-jshint": "~0.10",
+    "grunt-exec": "~0.4.5"
   },
   "keywords": [
     "grunt",

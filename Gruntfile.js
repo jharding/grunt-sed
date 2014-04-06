@@ -26,10 +26,20 @@ module.exports = function(grunt) {
     , tasks: ['tasks/*.js']
     , tests: ['test/*.js']
     , gruntfile: ['Gruntfile.js']
+    },
+
+    exec: {
+      test: {
+        command: 'node test/test.js'
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('lint', 'jshint');
+  grunt.registerTask('test', ['jshint', 'exec']);
+  grunt.registerTask('default', 'test');
 };
