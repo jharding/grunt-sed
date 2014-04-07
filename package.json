@@ -41,5 +41,9 @@
     "sed",
     "search",
     "replace"
+  ],
+  "files": [
+    "LICENSE-MIT",
+    "tasks"
   ]
 }
