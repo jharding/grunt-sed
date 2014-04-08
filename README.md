@@ -37,7 +37,8 @@ This plugin is a [multi task][types_of_tasks], meaning that Grunt will automatic
 * `pattern` -  String or regex that will be replaced by `replacement`. **Required**.
 * `replacement` - The string that will replace `pattern`. Can be a function. **Required**.
 * `recursive` - If `true`, will recursively search directories. Defaults to `false`.
-* `exclude`: String or array of files/folders to exclude
+* `include` - String or array of files to include.
+* `exclude` - String or array of files/folders to exclude.
 
 ### Example
 
