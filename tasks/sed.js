@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       return;
     }
 
-    data.path = data.path || '.';
+    data.path = data.path || this.options().path || '.';
 
     replace({
       regex: data.pattern
