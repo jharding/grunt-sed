@@ -1,4 +1,7 @@
-[![build status](https://secure.travis-ci.org/jharding/grunt-sed.png?branch=master)](http://travis-ci.org/jharding/grunt-sed)
+[![Build Status](https://travis-ci.org/jharding/grunt-sed.svg?branch=master)](https://travis-ci.org/jharding/grunt-sed)
+[![Dependency Status](https://david-dm.org/jharding/grunt-sed.svg)](https://david-dm.org/jharding/grunt-sed)
+[![devDependency Status](https://david-dm.org/jharding/grunt-sed/dev-status.svg)](https://david-dm.org/jharding/grunt-sed#info=devDependencies)
+
 grunt-sed
 =========
 
@@ -11,13 +14,13 @@ Installation
 
 Install grunt-sed using npm:
 
-```
+```bash
 $ npm install grunt-sed
 ```
 
 Then add this line to your project's *Gruntfile.js*:
 
-```javascript
+```js
 grunt.loadNpmTasks('grunt-sed');
 ```
 
@@ -37,7 +40,7 @@ This plugin is a [multi task][types_of_tasks], meaning that Grunt will automatic
 
 ### Example
 
-```javascript
+```js
 grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
 
@@ -45,7 +48,7 @@ grunt.initConfig({
     version: {
       pattern: '%VERSION%',
       replacement: '<%= pkg.version %>',
-      recursive: true 
+      recursive: true
     }
   }
 });
@@ -54,7 +57,7 @@ grunt.initConfig({
 Testing
 -------
 
-```
+```bash
 $ cd grunt-sed
 $ npm test
 ```
@@ -84,5 +87,5 @@ For more information on semantic versioning, please visit http://semver.org/.
 License
 -------
 
-Copyright (c) 2013 [Jake Harding](http://thejakeharding.com)  
+Copyright (c) 2013 [Jake Harding](http://thejakeharding.com) <br/>
 Licensed under the MIT License.

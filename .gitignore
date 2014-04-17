@@ -1,5 +1,6 @@
-.DS_Store
 *.swp
+.DS_Store
 
 node_modules
+npm-debug.log
 test/test.txt
