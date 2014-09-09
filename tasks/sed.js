@@ -24,10 +24,16 @@ module.exports = function(grunt) {
 
     data.path = data.path || '.';
 
+    // `replace` expects a comma-separated list of paths
+    if (_.isArray(data.exclude)) {
+        data.exclude = data.exclude.join(',');
+    }
+
     replace({
       regex: data.pattern
     , replacement: data.replacement
     , paths: _.isArray(data.path) ? data.path : [data.path]
+    , exclude: data.exclude
     , recursive: data.recursive
     , quiet: grunt.option('verbose') ? false : true
     , silent: false
