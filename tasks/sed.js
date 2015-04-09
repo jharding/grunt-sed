@@ -6,7 +6,7 @@
 
 module.exports = function(grunt) {
   var replace = require('replace')
-    , _ = grunt.util._
+    , _ = require('lodash')
     , log = grunt.log;
 
   grunt.registerMultiTask('sed', 'Search and replace.', function() {
@@ -23,11 +23,15 @@ module.exports = function(grunt) {
     }
 
     data.path = data.path || '.';
+    data.include = data.include || '';
+    data.exclude = data.exclude || '';
 
     replace({
       regex: data.pattern
     , replacement: data.replacement
     , paths: _.isArray(data.path) ? data.path : [data.path]
+    , include: _.isArray(data.include) ? _(data.include).toString() : data.include
+    , exclude: _.isArray(data.exclude) ? _(data.exclude).toString() : data.exclude
     , recursive: data.recursive
     , quiet: grunt.option('verbose') ? false : true
     , silent: false

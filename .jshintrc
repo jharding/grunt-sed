@@ -3,7 +3,6 @@
     "curly": true
   , "forin": true
   , "indent": 2
-  , "maxlen": 80
   , "newcap": true
   , "noarg": true
   , "noempty": true
