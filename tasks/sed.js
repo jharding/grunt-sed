@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     if (_.isArray(data.path)) {
       data.path.map(function(_path) {
         _paths = _paths.concat(glob.sync(_path, {}));
-      })
+      });
     } else {
       _paths = glob.sync(data.path, {});
     }
