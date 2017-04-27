@@ -6,8 +6,20 @@ var grunt = require('grunt')
   , opts = { gruntfile: path.join(testDir, 'Gruntfile.js') }
   , tasks = ['sed']
   , testFilePath = path.join(testDir, 'test.txt')
-  , input = ['search', '12-21-2012', 'LOWERCASE', 'YY', 'xXx'].join('\n')
-  , output = ['replace', '12-21-endOfWorld', 'lowercase', 'ZZ', 'XxX'].join('\n');
+  , input = [
+    'search',
+    '12-21-2012',
+    'LOWERCASE',
+    'YY',
+    'xXx'
+  ].join('\n')
+  , output = [
+    'replace',
+    '12-21-endOfWorld',
+    'lowercase',
+    'ZZ',
+    'XxX'
+  ].join('\n');
 
 fs.writeFileSync(testFilePath, input);
 
