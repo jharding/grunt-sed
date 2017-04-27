@@ -25,6 +25,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "glob": "^7.1.1",
     "replace": "~0.2.9"
   },
   "peerDependencies": {
