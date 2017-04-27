@@ -21,6 +21,11 @@ module.exports = function(grunt) {
       , replacement: 'Z'
       , path: 'test.txt'
       }
+    , test5: {
+        pattern: 'xXx'
+      , replacement: 'XxX'
+      , path: 'test.*'
+      }
     }
   });
 
