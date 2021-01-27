@@ -1,20 +1,19 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
       options: {
-        jshintrc: '.jshintrc'
-      }
-    , gruntfile: ['Gruntfile.js']
-    , tasks: ['tasks/*.js']
-    , tests: ['test/*.js']
+        jshintrc: '.jshintrc',
+      },
+      gruntfile: ['Gruntfile.js'],
+      tasks: ['tasks/*.js'],
+      tests: ['test/*.js'],
     },
 
     exec: {
       test: {
-        command: 'node test/test.js'
-      }
-    }
-
+        command: 'node test/test.js',
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
