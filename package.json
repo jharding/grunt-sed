@@ -1,20 +1,20 @@
 {
-  "name": "grunt-sed",
+  "name": "castle-grunt-sed",
   "description": "Grunt task for search and replace.",
-  "version": "0.1.1",
-  "homepage": "https://github.com/jharding/grunt-sed",
-  "author": "Jake Harding <jacob.s.harding@gmail.com>",
+  "version": "0.0.0",
+  "homepage": "https://github.com/castlecms/grunt-sed",
+  "author": "Wildcard Corp. <support@wildcardcorp.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jharding/grunt-sed.git"
+    "url": "https://github.com/castlecms/grunt-sed.git"
   },
   "bugs": {
-    "url": "https://github.com/jharding/grunt-sed/issues"
+    "url": "https://github.com/castlecms/grunt-sed/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jharding/grunt-sed/blob/master/LICENSE-MIT"
+      "url": "https://github.com/castlecms/grunt-sed/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {

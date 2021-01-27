@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/jharding/grunt-sed.svg?branch=master)](https://travis-ci.org/jharding/grunt-sed)
-[![Dependency Status](https://david-dm.org/jharding/grunt-sed.svg)](https://david-dm.org/jharding/grunt-sed)
-[![devDependency Status](https://david-dm.org/jharding/grunt-sed/dev-status.svg)](https://david-dm.org/jharding/grunt-sed#info=devDependencies)
+[![Build Status](https://travis-ci.org/castlecms/grunt-sed.svg?branch=master)](https://travis-ci.org/castlecms/grunt-sed)
+[![Dependency Status](https://david-dm.org/castlecms/grunt-sed.svg)](https://david-dm.org/castlecms/grunt-sed)
+[![devDependency Status](https://david-dm.org/castlecms/grunt-sed/dev-status.svg)](https://david-dm.org/castlecms/grunt-sed#info=devDependencies)
 
 grunt-sed
 =========
@@ -67,7 +67,7 @@ Issues
 
 Found a bug? Create an issue on GitHub.
 
-https://github.com/jharding/grunt-sed/issues
+https://github.com/castlecms/grunt-sed/issues
 
 Versioning
 ----------
@@ -87,5 +87,5 @@ For more information on semantic versioning, please visit http://semver.org/.
 License
 -------
 
-Copyright (c) 2013 [Jake Harding](http://thejakeharding.com) <br/>
+Copyright (c) 2020 [Wildcard Corp.](https://wildcardcorp.com/) <br/>
 Licensed under the MIT License.
